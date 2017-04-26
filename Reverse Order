@@ -3,9 +3,9 @@
 #include <sys/stat.h>
 int main(){
 
-struct stat st;
-stat("alphabet.txt", &st);
-int size = (st.st_size-1);
+struct stat stats;
+stat("alphabet.txt", &stats);
+int size = (stats.stats_size-1);
 
 unsigned char buffer[size];
 FILE *ptr;
